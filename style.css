@@ -115,36 +115,3 @@ body {
     font-size: 28px;
     margin-top: -6px;
 }
-
-@media (max-width: 600px) {
-    .card {
-        padding: 15px;
-        height: 800px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .weather h1 {
-        font-size: 30px;
-    }
-
-    .weather h2 {
-        font-size: 18px;
-    }
-
-    .weather-icon {
-        width: 100px;
-        margin-top: 30px;
-    }
-
-    .col i {
-        font-size: 20px;
-    }
-
-    .humidity,
-    .wind {
-        font-size: 17px;
-    }
-}
