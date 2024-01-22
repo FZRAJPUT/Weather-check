@@ -9,13 +9,16 @@ async function checkweather(cityin) {
     document.querySelector(".city").innerHTML = data.name;
     if (document.querySelector(".city").innerHTML == "undefined") {
         document.querySelector(".city").innerHTML = "City not found";
-        document.querySelector(".wind").style.display = 'none';
-        document.querySelector(".humidity").style.display = 'none';
-        document.querySelector(".temp").style.display = 'none';
+        document.querySelector(".wind").style.opacity = '0';
+        document.querySelector(".humidity").style.opacity = '0';
+        document.querySelector(".temp").style.opacity = '0';
     }
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
+    document.querySelector(".wind").style.opacity = '1';
+        document.querySelector(".humidity").style.opacity = '1';
+        document.querySelector(".temp").style.opacity = '1';
 }
 const bti = 'bathinda';
 document.addEventListener("DOMContentLoaded", function () {
